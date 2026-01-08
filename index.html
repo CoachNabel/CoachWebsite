@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coach Nabel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- TOP PROFILE -->
+<header class="profile">
+    <img src="trainer.jpg" class="avatar">
+    <h1>Coach Nabel</h1>
+    <p>Personal Trainer</p>
+
+    <div class="actions">
+        <a href="https://wa.me/1234567890" class="btn whatsapp">WhatsApp</a>
+        <a href="https://m.me/yourfacebookusername" class="btn messenger">Message</a>
+    </div>
+</header>
+
+<!-- BIO -->
+<section class="card">
+    <h2>About Me</h2>
+    <p>
+        Helping people lose fat, build muscle, and gain confidence.
+        7+ years experience. Personalized programs. Real results.
+    </p>
+</section>
+
+<!-- PACKAGES -->
+<section class="card">
+    <h2>Training Packages</h2>
+
+    <div class="package">
+        <h3>Starter 💪</h3>
+        <p>3 sessions / week</p>
+        <p>Basic nutrition guidance</p>
+        <span>$80 / month</span>
+    </div>
+
+    <div class="package highlight">
+        <h3>Transformation 🔥</h3>
+        <p>5 sessions / week</p>
+        <p>Full nutrition plan</p>
+        <p>Weekly progress check</p>
+        <span>$160 / month</span>
+    </div>
+
+    <div class="package">
+        <h3>Online Coaching 📲</h3>
+        <p>Custom workout plan</p>
+        <p>WhatsApp support</p>
+        <span>Starting at $60 / month</span>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="card">
+    <h2>Step by Step</h2>
+    <div class="gallery">
+        <img src="photo1.jpg">
+        <img src="photo2.jpg">
+        <img src="photo3.jpg">
+    </div>
+</section>
+
+<!-- FORM -->
+<section class="card">
+    <h2>Start Training</h2>
+
+    <form id="clientForm">
+        <input id="name" placeholder="Full Name" required>
+        <input id="contactinfo" placeholder="Cell or Email" required>
+        <input id="age" type="number" placeholder="Age" required>
+        <input id="height" type="number" placeholder="Height (cm)">
+        <input id="weight" type="number" placeholder="Weight (kg)">
+
+        <select id="goal">
+            <option>Lose Weight</option>
+            <option>Build Muscle</option>
+            <option>Improve Fitness</option>
+        </select>
+
+        <textarea id="conditions" placeholder="Injuries / medical conditions"></textarea>
+        
+        <select id="plan">
+            <option>Custom workout plan</option>
+            <option>Starter $80/m</option>
+            <option>Transformation $160/m</option>
+        </select>
+
+
+        <button type="submit">Send & Contact</button>
+    </form>
+</section>
+
+<!-- contact media -->
+<section class="card">
+    <h2>Chat with Coach Nabel</h2>
+    <div class="actions">
+        <a href="https://wa.me/1234567890" class="btn whatsapp">WhatsApp</a>
+        <a href="https://m.me/yourfacebookusername" class="btn messenger">Message</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Coach Nabel
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
