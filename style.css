@@ -197,7 +197,7 @@ transform:translateY(40px);
 transition:all .6s ease;
 }
 
-@media (max-width:768px){
+/* @media (max-width:768px){
 
 .nav{
 flex-direction:column;
@@ -216,11 +216,7 @@ justify-content:center;
 font-size:28px;
 }
 
-}
-
-@media (max-width:768px){
-
-/* .service-container{
+ .service-container{
 flex-direction:column;
 align-items:center;
 }
@@ -229,7 +225,7 @@ align-items:center;
 width:90%;
 opacity:1;
 transform:none;
-} */
+} 
 
 .service-container{
 display:flex;
@@ -253,6 +249,70 @@ width:90%;
 
 input,select,textarea{
 font-size:16px;
+}
+
+} */
+
+
+@media (max-width:768px){
+
+/* NAVIGATION */
+
+.nav{
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+.nav-links{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+
+/* HERO */
+
+.hero h2{
+font-size:28px;
+}
+
+
+/* SERVICES FIX */
+
+.services{
+padding:60px 15px;
+width:100%;
+box-sizing:border-box;
+}
+
+.service-container{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+width:100%;
+margin:0 auto;
+gap:20px;
+}
+
+.card{
+width:100%;
+max-width:320px;
+margin:0 auto;
+box-sizing:border-box;
+opacity:1;
+transform:none;
+}
+
+
+/* FORM */
+
+form{
+width:100%;
+max-width:400px;
+margin:auto;
 }
 
 }
