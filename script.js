@@ -1,34 +1,47 @@
-emailjs.init("YOUR_PUBLIC_KEY");
+const form = document.getElementById("leadForm")
+const message = document.getElementById("formMessage")
 
-document.getElementById("clientForm").addEventListener("submit", function(e) {
-    e.preventDefault();
+form.addEventListener("submit", function(e){
 
-    const data = {
-        name: name.value,
-        age: age.value,
-        height: height.value,
-        weight: weight.value,
-        goal: goal.value,
-        conditions: conditions.value
-    };
+e.preventDefault()
 
-    emailjs.send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        data
-    );
+emailjs.sendForm(
+"service_zx16ady",
+"template_pvejrf5",
+this
+)
 
-    const message =
-`New Client:
-Name: ${data.name}
-Age: ${data.age}
-Height: ${data.height}
-Weight: ${data.weight}
-Goal: ${data.goal}
-Conditions: ${data.conditions}`;
+.then(function(){
 
-    window.open(
-        `https://wa.me/1234567890?text=${encodeURIComponent(message)}`,
-        "_blank"
-    );
-});
+message.innerText="Thank you! Coach Nabel will contact you soon."
+form.reset()
+
+},
+
+function(error){
+
+message.innerText="Something went wrong. Please try again."
+
+})
+
+})
+
+const cards = document.querySelectorAll(".card")
+
+window.addEventListener("scroll", ()=>{
+
+cards.forEach(card=>{
+
+const position = card.getBoundingClientRect().top
+const screen = window.innerHeight
+
+if(position < screen - 100){
+
+card.style.opacity = 1
+card.style.transform = "translateY(0)"
+
+}
+
+})
+
+})
